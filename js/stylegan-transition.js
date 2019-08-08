@@ -10,7 +10,7 @@ const imgSize = 512; //our image will be 512x512 pixels, which is what StyleGAN 
 
 //let amt = 0.0; //unused?
 let angle = 0;
-let count = 0; 
+let count = 0;
 
 function setup() {
   createCanvas(imgSize, imgSize);
