@@ -5,7 +5,8 @@ Using RunwayML and P5.js
 
 * [Companion Tutorial Video to this codebase](https://youtu.be/a9lVZ2eGheE)
 
-[![Animated StyleGAN Transitions with Runway and P5](http://img.youtube.com/vi/a9lVZ2eGheE/0.jpg)](http://www.youtube.com/watch?v=a9lVZ2eGheE "Companion Tutorial Video")
+![Animated StyleGAN Transitions with Runway and P5](https://prototypes.mikeheavers.com/transfer/stylegan-transitions.gif)
+
 
 ### DOWNLOADS
 * [P5.js](http://p5js.org/) - Requests random images from StyleGAN and saves them to your computer
