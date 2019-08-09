@@ -28,9 +28,11 @@ Using RunwayML and P5.js
 
 ## INSTRUCTIONS
 
-* Download, install, and run runway
-* Download and Install Runway 
+* Download, install, and run Docker
+* Download, install and run Runway 
 * Download P5, P5 Dom, and ToxicLibs
 * Create a workspace in runway running StyleGAN
 * In runway under styleGAN options, click Network, then click "Run Remotely"
+* Open the `index.html` file from the github repo in your browser.
+* Turn the images output from the browser from an image sequence to a video using a tool like Premiere / AfterEffects, or other free online resource.
 
