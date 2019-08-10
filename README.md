@@ -3,7 +3,7 @@ Using RunwayML and P5.js
 
 ## RESOURCES
 
-* [Companion Tutorial Video to this codebase](https://youtu.be/a9lVZ2eGheE)
+* [Companion Tutorial Video to this codebase](https://youtu.be/YmcpA2uuvZk)
 
 ![Animated StyleGAN Transitions with Runway and P5](https://prototypes.mikeheavers.com/transfer/stylegan-transitions.gif)
 
