@@ -52,7 +52,7 @@ function gotImage(result) { //called once generate image has received a response
 
 function imageReady() { //saves the image
   image(outputImage, 0, 0);
-  save(`outputImage${nf(count, 4)}`); //nf formats numbers to strings
+  //save(`outputImage${nf(count, 4)}`); //nf formats numbers to strings //if you don't want to output to Runway, you can save the images straight from processing by uncommenting this line.
   count++;
   if (angle <= TWO_PI) { //once we have traversed all pixels, generated a new image
     setTimeout(generateImage, 100);

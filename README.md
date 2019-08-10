@@ -23,16 +23,15 @@ Using RunwayML and P5.js
 
 ### MORE INFO
 
-* [More details on StyleTransfer](https://prototypes.mikeheavers.com/mtc-ml/ml4a-style-transfer.html)
-* [Creating your own style transfer models using P5 / ML5](https://ml5js.org/reference/api-StyleTransfer/)
+* [Intro to StyleGAN](https://www.youtube.com/watch?v=-cOYwZ2XcAc)
 
 ## INSTRUCTIONS
 
-* Download, install, and run Docker
 * Download, install and run Runway 
 * Download P5, P5 Dom, and ToxicLibs
 * Create a workspace in runway running StyleGAN
 * In runway under styleGAN options, click Network, then click "Run Remotely"
 * Open the `index.html` file from the github repo in your browser.
-* Turn the images output from the browser from an image sequence to a video using a tool like Premiere / AfterEffects, or other free online resource.
+* To output a video from Runway, choose Output > Video and give it a place to save and select your desired frame rate.
+* To output a video from Processing, turn the images output from the browser from an image sequence to a video using a tool like Premiere / AfterEffects, or other free online resource.
 
