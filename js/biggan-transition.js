@@ -3,17 +3,18 @@
 // by the coding train / Daniel Shiffman (https://www.youtube.com/watch?v=QzRW0xzm10c&t=6622s)
 
 let outputImage;
+let imgCategory = "vault"; //the category of images we want to generate (see Runway for category options)
 
 const n = []; 
-const imgSize = 140; //BigGAN's input specification wants a z of 140 floats
-
+const imgSize = 256; 
+const zSize = 140; //BigGAN's input specification wants a z of 140 floats
 
 let angle = 0;
 let count = 0;
 
 function setup() {
   createCanvas(imgSize, imgSize);
-  for (let i = 0; i < imgSize; i++) {
+  for (let i = 0; i < zSize; i++) {
     n[i] = new NoiseLoop(20, -1, 1); //diameter, min, max
   }
   generateImage();
@@ -24,15 +25,15 @@ function setup() {
 function generateImage() { 
   const path = "http://localhost:8000/query"; //the default path used by Runway for receiving post requests
   //a is loaded via the data js array and represents our initial starting vector / latent space image representation from which we sample to get random new images.
-  for (let i = 0; i < imgSize; i++) { //loop through all pixels, and select the corresponding value for the vector with the randomness generated from our Noise Loop function
+  for (let i = 0; i < zSize; i++) { //loop through all pixels, and select the corresponding value for the vector with the randomness generated from our Noise Loop function
     a[i] = n[i].value(angle); 
   }
   //amt += 0.05; //unused?
   let da = TWO_PI / (24*60); //MH - not sure why these values are used (1440 = 360*4)
   angle += da;
 
-  const data = { //from BigGAN's input specification - I've chosen hen but you can use any category
-    category: "hen", //variation in image generations - higher is more random, lower is more similar
+  const data = { //from BigGAN's input specification - use any category
+    category: imgCategory,
     z: a, //generated latent space vector
   };
   httpPost(path, 'json', data, gotImage, gotError);

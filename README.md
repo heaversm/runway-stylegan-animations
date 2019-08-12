@@ -1,4 +1,4 @@
-# STYLEGAN ANIMATIONS
+# GAN ANIMATIONS
 Using RunwayML and P5.js
 
 ## RESOURCES
@@ -35,3 +35,6 @@ Using RunwayML and P5.js
 * To output a video from Runway, choose Output > Video and give it a place to save and select your desired frame rate.
 * To output a video from Processing, turn the images output from the browser from an image sequence to a video using a tool like Premiere / AfterEffects, or other free online resource.
 
+## BIGGAN TRANSITIONS
+
+Someone on Youtube asked if the same effect could be applied to BigGAN. Yes! If you look at Runway, the input specification is a bit different - it wants a z of 140 floats, and a category as the input, and for the output, you will be getting the image as a variable called `generatedOutput`. I've included an example in this repo of how to do this. Just follow the same steps above but load `biggan.html` instead of `index.html`.
